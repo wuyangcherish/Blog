@@ -1,0 +1,59 @@
+*{
+	padding:0;margin:0;
+}
+body{
+	background-color:#000;
+}
+div{
+	width:190px;
+	height:190px;
+	position: relative;
+	margin:50px;
+/*	overflow: hidden;*/
+	background-color:pink;
+	transition: background 0.2s ease-in;
+	-webkit-transition:background 0.2s ease-in;
+}
+div p{
+	text-align: center;
+	color:#fff;
+	line-height: 30px;
+	font-size:16px;
+	padding-top:20px;
+}
+
+svg{
+	position: absolute;
+	top:-7px;
+	left: -7px;
+}
+
+svg line{
+	stroke-width:3px;
+	stroke:#fff;
+	fill:none;
+	/*	stroke-dasharray: 定制虚线的 */
+	stroke-dasharray:204; 
+	-webkit-transition:-webkit-transform 0.6s ease-out;
+	transition: transform 0.6s ease-out;
+}
+div:hover svg line.top{
+	-webkit-transform: translateX(-408px);
+	transform:translateX(-408px)
+}
+div:hover svg line.bottom{
+	-webkit-transform: translateX(408px);
+	transform: translateX(408px);
+}
+div:hover svg line.left{
+	-webkit-transform: translateY(408px);
+	transform:  translateY(408px);
+}
+div:hover svg line.right{
+	-webkit-transform:translateY(-408px);
+	transform:translateY(-408px)
+}
+div:hover{
+	background:#000;
+}
+

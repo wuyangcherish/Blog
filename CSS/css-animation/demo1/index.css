@@ -1,0 +1,28 @@
+*{
+	padding:0;margin:0;
+}
+.pic{
+	width:400px;
+	height:500px;
+	border:1px solid #ccc;
+	background:url('http://img06.tooopen.com/images/20160916/tooopen_sy_178967543424.jpg');
+	background-position: auto 100%;
+	animation:panormic 10s linear infinite alternate;
+	-webkit-animation:panormic 10s linear infinite alternate;
+	animation-play-state: paused;
+	-webkit-animation-play-state:paused;
+}
+/*
+	* hover 是个无记忆的属性，所以如果这么写的话鼠标移出直接跳回到最前面，这样很突兀
+	* animation-play-state 这个属性就可以解决这个问题，这个只是暂停动画而不是取消动画
+*/
+.pic:hover, 
+.pic:focus{
+	animation-play-state: running;
+	-webkit-animation-play-state:running;
+}
+@keyframes panormic{
+	to{
+		background-position:100% 0;
+	}
+}

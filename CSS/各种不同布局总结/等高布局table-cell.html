@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>等高布局</title>
+<style type="text/css">
+    .layout_col {
+        text-align: center;
+        display: table-cell;
+    }
+    /*这里是添加三列之间的空隙的*/
+    .layout_col + .layout_col {
+        border-left: 10px solid #fff;
+    }
+    .center{
+        background-color: #9ad;
+        width:3000px;
+    }
+    aside{
+        width:200px;
+        min-width:200px;
+        background-color: #daa;
+    }
+</style>
+</head>
+<body>
+    <div class="parent">
+        <aside class="layout_col left">这里是左边一列</aside>
+        <div class="layout_col center">两边的div都会随着这个高度来变化<p>不信的话你试试喽</p></div>
+        <aside class="layout_col right">这里是右侧的一栏</aside>
+    </div>
+</body>
+</html>

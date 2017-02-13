@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>line-height消除大字体的上下空白间隙</title>
+<style>
+    *{padding: 0;margin: 0;}
+    p{font-size:40px;color:#9dd}    
+    div{
+        width:1000px;
+        height:80px;
+        border:1px solid #99d;
+        margin:20px 0;
+        line-height:60px;  /*设置一个默认的来进行对比*/
+    }
+    .normal{
+        line-height:normal; /*计算出来的上下间距各为6px;*/
+    }
+    .number{
+        line-height: 2;  /*计算出来的上下间距各为 20px  80-40=40/2 == 20;*/
+    }
+    .per {
+        line-height: 100%; /*计算出来的line-height: 80px;*/
+    }
+    .inherit {
+        line-height: inherit;
+    }
+</style>
+</head>
+<body>
+   <div class="normalCon">
+        <p class="normal">1. line-height: normal 【默认】</p>
+   </div>
+   <div class="numberCon">
+       <p class="number">2. line-height:number</p>
+   </div>
+    <div class="perCon">
+         <p class="per">3. line-height: 100% 【消除大字体的上下空隙】</p>
+    </div>
+   <div class="inheritCon">
+       <p class="inherit">4. line-height:　inherit</p>
+   </div>
+    
+</body>
+</html>

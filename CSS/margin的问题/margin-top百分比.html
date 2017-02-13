@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>margin-top为百分比</title>
+<style>
+    *{padding:0;margin:0}
+    .content {
+        width:1000px;
+        height:300px;
+        background-color:blueviolet;
+        overflow:hidden;
+    }    
+    .inner {
+        width:400px;
+        height:50px;
+        background-color: bisque;
+        margin-top:10%;
+    }
+    .other {
+        width:200px;
+        height:200px;
+        background-color: coral;
+        margin-top:10%;
+    }
+</style>
+</head>
+<body>
+    <div class="content">
+        <div class="inner">
+            看看我的位置是怎么变化的
+        </div>
+    </div>
+    <div class="other">
+        <p>我其实是随着body的宽度变化而变化的</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位设置等高布局</title>
+<style type="text/css">
+*{padding:0;margin:0;}
+    .layout_aside, center{
+        float: left;
+    }
+    .parent{
+        padding-left:420px;
+    }
+    .right{
+        margin-left:-210px;
+    }
+    .left{
+        margin-left:-420px;
+    }
+    .layout_aside {
+        background-color:#088;
+    }
+    .center{
+        width:100%;
+        background-color:#9dd;
+    }
+    .clearfix{
+        zoom:1;
+    }
+    .clearfix:after{
+        content:"";
+        clear:both;
+        display:block;
+        overflow: hidden;
+        
+    }
+    /*如果两列侧边栏放在哟变则直接修改一下padding 和margin */
+</style>
+</head>
+<body>
+    <div class="parent clearfix">
+        <aside class="layout_col layout_aside left">这里是左边一列</aside>
+        <aside class="layout_col layout_aside right">这里是右侧的一栏</aside>
+        <div class="layout_col center">中间列布局</p></div>
+        
+    </div>
+</body>
+</html>

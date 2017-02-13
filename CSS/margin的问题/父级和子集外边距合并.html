@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>父级和子集的margin合并</title>
+<style>
+    *{padding:0;margin:0;}    
+    .div1{
+        width:200px;height:200px;background-color:green;
+        margin-top:30px;
+    }
+    .div2 {
+        width:100px;height:100px;background-color:yellowgreen;
+        margin-top:50px;
+    }
+    .div3 {
+         width:200px;height:200px;background-color:green;
+         margin-top:-10px;
+    }
+    .div4 {
+         width:100px;height:100px;background-color:yellowgreen;
+         margin-top:-40px;
+    }
+    .div5 {
+         width:200px;height:200px;background-color:green;
+         margin-top:10px;
+    }
+    .div6 {
+         width:100px;height:100px;background-color:yellowgreen;
+         margin-top:-40px;
+    }
+    
+</style>
+</head>
+<body>
+  <h3>情况1: 父级和子集的margin都是正值</h3>
+   <div class="div1">
+       <div class="div2"></div>
+   </div>
+   <hr>
+  <h3>情况2: 父级和子集的margin都是负值</h3>
+   <div class="div3">
+       <div class="div4"></div>
+   </div>
+   <hr>
+  <h3>情况3: 父级和子集的margin一正一负</h3>
+   <div class="div5">
+       <div class="div6"></div>
+   </div>
+</body>
+</html>
