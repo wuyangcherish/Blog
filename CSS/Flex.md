@@ -79,6 +79,8 @@
 	flex: none | <flex-grow> <flex-shrink> ? || <flex-basis>
 ```
 
-PS ： 相关demo 见[【Flex】demo](http://codepen.io/karinw/pen/apPmWX)
+### 相关demo 见
+* [Flex 基本属性](http://codepen.io/karinw/pen/apPmWX)
+* [Flex-demo](http://codepen.io/karinw/pen/ygGZqd)
     
-    
+  
