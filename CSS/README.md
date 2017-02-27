@@ -1,25 +1,30 @@
-## CSS
+#  CSS
+
+##   SASS资源：
+
+#### 资料
+
+* [Sass中文教程](http://www.sass.hk/sass-course.html)
+* [Sass相关资料汇总](https://www.w3cplus.com/sassguide/)
 
 
-#### SASS资源：
+ 
 
-1. [Sass中文教程](http://www.sass.hk/sass-course.html)
+##  有关 css 动画卡顿的一些文章
 
-#### 有关 css 动画卡顿的一些文章
+####  相关文章
 
-###### 相关文章
+* [深入理解css animations 和 transition 的性能问题](http://blog.csdn.net/leer168/article/details/25917093)
+* [解决 Chrome 动画卡顿办法](http://www.cnblogs.com/xdoudou/p/4524758.html)
+* [前两篇文章总结出来的一篇文章](https://segmentfault.com/a/1190000006708777)
 
-1. [深入理解css animations 和 transition 的性能问题](http://blog.csdn.net/leer168/article/details/25917093)
-2. [解决 Chrome 动画卡顿办法](http://www.cnblogs.com/xdoudou/p/4524758.html)
-3. [前两篇文章总结出来的一篇文章](https://segmentfault.com/a/1190000006708777)
-
-###### 卡顿的原因：
+#### 卡顿的原因：
 
 长时间执行 `JavaScript` 或者渲染一个很大的元素 导致主线程阻塞， 在此期间，它将无法响应用户的交互。
 
 但是合成线程会尽量的去响应用户的交互，当一个页面发生变化的时候，合成线程会以 `60帧` 的间隔不断地进行页面重绘~。当然它不会管主线程准备的怎么样了，只是主线程没准备好的部分用白色的替代而已。这样的话就会产生丢帧的问题。
 
-###### 现代浏览器
+#### 现代浏览器
 
 现代的浏览器一般有两个重要的线程， 这两个线程协同来渲染一个网页
 
@@ -43,18 +48,18 @@
     当你滚动页面的时候将相应位置的元素移动到可视区域
 ```
    
-###### GPU
+####  GPU
 
 GPU 图形处理器 芯片有着非常专业的定位，非常擅长绘图等事情。
 
 在这个回答 [GPU && CPU 的区别](https://www.zhihu.com/question/19903344)的话题里谈到了它主要都是干什么
 
-###### 位图
+#### 位图
 
 又称为栅格图/点阵图， 是使用像素阵列来表示的图像。[位图](https://zh.wikipedia.org/wiki/%E4%BD%8D%E5%9B%BE)
 
 
-###### 有关IE 的问题
+#### 有关IE 的问题
 
 1. IE下面不支持``background-size`` 
 
@@ -162,4 +167,7 @@ PS: 验证了半天得出来的看法。~  如果不对~ 以后再修改~ 先记
 4. IE8 一下不支持 transform 的属性
 
 这个问题貌似不引用一些插件什么的凭它自己是支持不了了。。所以如果要写图片的水平垂直居中的话， 除非不支持 IE8，不然还是用 ``text-align`` && ``line-height`` 吧。。。
+
+
+
 
