@@ -26,3 +26,8 @@
 
 * 《CSS SECRETS》总结
 
+### Chrome extension
+
+* 学习Chrome扩展的做一些东西
+* Chrome 插件待续。。。
+

@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+	"name": "constellation show",
+	"version": "1.0",
+	"description": "a notice about constellation",
+	"browser_action": {
+		"default_icon": {
+			"19": "constellation_32.png"
+		},
+		"default_title": "todays",
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+		"notifications", "http://web.juhe.cn:8080/constellation/getAll"
+	],
+	// 桌面提示的图标的必须在 web_accessible_resource域中进行声明
+	"web_accessible_resources": ["constellation_48.png"],
+	"background": {
+		"persistent": false,
+		"scripts": ["js/notification.js"]
+	}
+	//选项页面
+	// "options_page": "options.html"
+
+}
