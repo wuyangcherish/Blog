@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "Page Communication",
+	"version": "1.0",
+	"description": "a test about message communication",
+	"background": {
+		"persistent": false,
+		"scripts": ["js/background.js"]
+	},
+	"browser_action": {
+		"default_icon": {
+			"19": "message_32.png"
+		},
+		"default_title": "message communication",
+		"default_popup": "popup.html"
+	},
+	"chrome_url_overrides": {
+		"newtab": "newtab.html"
+	}
+}

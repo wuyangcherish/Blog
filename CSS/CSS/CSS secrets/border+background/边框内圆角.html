@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>边框内圆角</title>
+	<style type="text/css">
+	*{padding:0;margin:0;}
+		.con{
+			margin:50px 50px;
+		}
+		.con1{
+			background:#655;
+			padding:.8em;
+		}
+		.con1 .content{
+			background:tan;
+			border-radius:0.8em;
+			padding:2em;
+		}
+
+		.con2{
+			padding:2em;
+			background:tan;
+			border-radius:.8em;
+			outline: .8em solid #655;
+			background-origin: border-box;
+		}
+		.con3{
+			padding:2em;
+			box-shadow:0 0 0 0.8em #655;
+			border-radius:0.8em;
+			background:tan;
+		}
+		.con4{
+			padding:2em;
+			border-radius: 0.8em;
+			background: tan;
+			box-shadow: 0 0 0 0.8em #655;
+			outline:0.85em solid #655;
+		}
+	</style>
+</head>
+<body>
+	<div class="con con1">
+		<div class="content">
+			I have a nice subtle inner rounding,
+			don't I look pretty
+			两个div组成的内圆角
+		</div>
+	</div>
+	<div class="con con2">
+			I have a nice subtle inner rounding,
+			don't I look pretty
+
+			--outline 实现的圆角
+	</div>
+	<div class="con con3">
+			I have a nice subtle inner rounding,
+			don't I look pretty
+
+			--box-shadow 实现的圆角
+	</div>
+	<div class="con con4">
+			I have a nice subtle inner rounding,
+			don't I look pretty
+
+			outline 实现的圆角
+	</div>
+</body>
+</html>

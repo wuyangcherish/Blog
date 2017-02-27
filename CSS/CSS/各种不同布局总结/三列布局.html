@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>典型的三列布局</title>
+<style>
+body,div{padding:0;margin:0;}
+
+.left{
+    width:100px;
+    height:200px;
+    background:green;
+    float:left;
+    _margin-right:-3px;
+}
+
+.con {
+    margin:0 100px;
+    height:200px;
+    background: #9dd;	
+}
+
+.right {
+    width:100px;
+    height:200px;
+    background:yellow;
+    float:right;
+    _margin-left:-3px;
+}    
+<!--在IE6及以下有3px的像素差距  使用_margin来解决-->
+/*布局上面一定要先left--right--con 的顺序*/
+</style>
+</head>
+<body>
+    <div class="left">左边的div</div>
+    <div class="right">右边的div</div>
+    <div class="con">中间的div</div> 
+</body>
+</html>

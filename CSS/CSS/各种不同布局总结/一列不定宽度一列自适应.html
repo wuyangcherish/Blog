@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一列不定宽一列自适应</title>
+<style>
+    *{padding:0;margin:0;}
+    .left{
+        float:left;
+        width:200px;  /*宽度可以是任意的值*/
+        height:200px;
+        background: red;
+    }    
+    .right {
+        overflow: hidden;
+        height:200px;
+        background:yellow;
+    }
+</style>
+</head>
+<body>
+    <div class="parent">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

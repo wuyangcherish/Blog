@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Border</title>
+<style type="text/css">
+	.container{
+		height:200px;
+		margin:50px;
+	}
+	.con1, .con2, .con3{
+		width:300px;
+		border:10px solid hsla(360, 100%, 52%, 0.6);
+		background:#000;
+		margin:0 auto;
+		text-align: center;
+		padding:20px;
+		color:#fff;
+		font-size:16px;
+	}
+	.con1{
+		background-clip: border-box;
+	}
+	.con2{
+		background-clip: padding-box;
+	}
+	.con3{
+		background-clip: content-box;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="con1">
+			<p>这是背景延伸到border 的样式</p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="con2">
+			<p>背景未延伸到border位置</p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="con3">
+			<p>背景延伸到content-box外沿</p>
+			<p>白色区域为padding</p>
+		</div>
+	</div>
+</body>
+</html>
