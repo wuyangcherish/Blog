@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			body{
+				width: 250px;
+    			height: 200px;
+    			padding:20px;
+			}
+			h1{
+				color: #009dd9;
+			    line-height: 30px;
+			    font-size: 20px;
+			}
+			.w-wrap input[type="text"]{
+				width: 250px;
+			    height: 30px;
+			    border: 1px solid #009dd9;
+			    border-radius: 3px;
+			    margin:10px 0;
+			    padding:15px;
+			}
+			.err{
+				color:red;
+			}
+			.w-wrap .getWeather{
+				width: 100px;
+			    height: 30px;
+			    border: navajowhite;
+			    background: #009dd9;
+			    color: #fff;
+			    cursor:pointer;
+			}
+			#result{
+				line-height: 30px;
+    			color: #009dd9;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jQuery.Hz2Py-min.js"></script>
+	</head>
+	<body>
+		<h1>天气查询</h1>
+		<div class="w-wrap">
+			<input type="text" placeholder="请输入要查询的城市" id="ipt">
+			<p class="err"></p>
+			<button class="getWeather" id="get-weather">获取天气</button>
+			<p id="result"></p>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/get_weather.js"></script>
+</html>
