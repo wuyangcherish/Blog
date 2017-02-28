@@ -1,0 +1,47 @@
+#todo-list{
+	max-width:800px;
+	margin:0 auto;
+	text-align: center;
+	padding: 30px 50px;
+}
+#todo-list input.ipt{
+	width: 300px;
+    height: 30px;
+    padding: 5px 10px;
+    outline: none;
+    vertical-align: middle;
+}
+#todo-list .wrongTip{
+	border:1px solid #ce4242;
+}
+#todo-list .add{
+	width: 60px;
+    height: 45px;
+    padding: 5px 10px;
+    border: navajowhite;
+    vertical-align: middle;
+    background: #009dd9;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+}
+#todo-list li{
+	list-style: none;
+    text-align: left;
+    width: 430px;
+    margin: 0 auto;
+    position: relative;
+    line-height: 40px;
+}
+#todo-list span{
+	position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#todo-list span img{
+	max-width: 100%;
+    max-height: 100%;
+}

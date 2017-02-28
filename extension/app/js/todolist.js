@@ -2,6 +2,7 @@ new Vue({
 	el: '#todo-list',
 	data: {
 		newTodoText: "",
+		isWrong: false,
 		todos: [
 			"Do the dishes",
 			"Take out the trash",
@@ -10,11 +11,15 @@ new Vue({
 	},
 	methods: {
 		addNewTodo: function() {
-			this.todos.unshift(this.newTodoText);
-			this.newTodoText = '';
-			chrome.storage.sync.set({
-				'todolist': this.todos
-			})
+			if (this.newTodoText !== '') {
+				this.todos.unshift(this.newTodoText);
+				this.newTodoText = '';
+				chrome.storage.sync.set({
+					'todolist': this.todos
+				})
+			} else {
+				this.isWrong = true
+			}
 		},
 		init: function() {
 			var self = this;
@@ -28,6 +33,9 @@ new Vue({
 			chrome.storage.sync.set({
 				'todolist': this.todos
 			})
+		},
+		modified: function() {
+			this.isWrong = false;
 		}
 	},
 	created: function() {

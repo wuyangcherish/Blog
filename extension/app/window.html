@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
   	<head>
-  	<link rel="stylesheet" href="css/todolist.css">
-
+  	<link rel="stylesheet" href="css/normalize.css"/>
+  	<link rel="stylesheet" href="css/todolist.css"/>
   	</head>
   	<body>
     <div id="todo-list">
     	<h1>TODO LIST</h1>
     	<input type="text" placeholder="待办事项" v-model="newTodoText"
-    	v-on:keyup.enter="addNewTodo"/>
+    	v-on:keyup.enter="addNewTodo" v-bind:class="{'ipt':true, 'wrongTip':isWrong}"
+    	v-on:keyup="modified()"/>
+    	<button class="add" v-on:click="addNewTodo">添加</button>
     	<ul class="todolist" v-show="todos.length>0">
     		<li
 		      is="todo-item"
 		      v-for="(index,todo) in todos"
 		      v-bind:title="todo"
 		      v-on:remove="todos.splice(index, 1)"
-		    >{{todo}} <span class="del" v-on:click="del(index)">X</span></li>
+		    >{{todo}} <span class="del" v-on:click="del(index)"><img src="CLOSE.png" height="48" width="48" alt=""></span></li>
     	</ul>
     </div>
 	<script type="text/javascript" src="js/vue.js"></script>
