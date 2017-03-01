@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "Google Mail",
+	"description": "Read your  -- hostsAPP",
+	"version": "1.0",
+	"app": {
+		"urls": [
+			"*://mail.google.com/mail/",
+			"*://www.google.com/mail/"
+		],
+		"launch": {
+			"web_url": "https://mail.google.com/mail/"
+		}
+	},
+	"icons": {
+		"128": "mail.png"
+	},
+	"permissions": [
+		"unlimitedStorage",
+		"notifications"
+	]
+}

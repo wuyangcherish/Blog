@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "First Chrome App",
+	"version": "1.0",
+	"app": {
+		"background": {
+			"scripts": ["js/background.js"]
+		}
+	},
+	"icons": {
+		"16": "app_16.png",
+		"128": "app_128.png"
+	},
+	"permissions": ["storage"]
+}
