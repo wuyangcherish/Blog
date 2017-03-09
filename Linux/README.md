@@ -99,5 +99,24 @@ kill -9 PID
 
 
 
+##### Vim 设置行号和语法高亮
+
+一般情况下 mac 安装之后 vim 默认不现实语法高亮和行号的
+
+设置的时候是修改 ``.vimrc``  文件。  
+
+一般安装之后该文件在 ``/usr/share/vim/vimrc`` 下面， root 权限的
+
+可以放到个人的目录下。
+
+```
+cp /usr/share/vim/vimrc ~/.vimrc
+
+```
+
+然后进入 ``vim ~/.vim`` 
+
+syntax on  --> 语法高亮
+set nu!  --> 显示行号
 
 
