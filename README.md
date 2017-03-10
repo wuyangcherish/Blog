@@ -3,6 +3,7 @@
 ### Design
 
 * Sketch 的一些相关应用
+* PS 的一些使用记录
 
 
 ### HTTP
@@ -21,6 +22,8 @@
 ### Linux
 
 * linux 基本操作总结
+* windows 下面软件的安装
+* Docker 应用部署
 
 ### CSS
 
