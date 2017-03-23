@@ -24,7 +24,7 @@ Mac 下面的做法是：** mv ngrok /usr/local/bin**下面 这里面也是存�
 	jitsu install http-server
 ```
  
-安装 http-server 相关的东西
+安装 http-server 相关的东西,然后运行
 
 然后 
 
@@ -32,7 +32,7 @@ Mac 下面的做法是：** mv ngrok /usr/local/bin**下面 这里面也是存�
 	http-server -c-1 
 ```
 
-就看到这个文件下面的应用运行到了8080 的端口 
+就看到这个文件下面的应用运行到了8080 的端口，这样就能访问该应用了
 
 ![启动一个http-server](http://7xlqb6.com1.z0.glb.clouddn.com/http-server)
 
@@ -54,6 +54,13 @@ Mac 下面的做法是：** mv ngrok /usr/local/bin**下面 这里面也是存�
 
 [w3tech 翻译 Service workers](https://www.w3ctech.com/topic/866)
 
+### PWA manifest.json
+
+里面的 **icons** 的数组里面 Lighthouse 建议 提供一个 **192 × 192** 的作为主屏幕的图标， **512 × 512**的作为闪屏的图标
+
+但是由于有 1x 1.5x 3x 4x 等不同的屏幕 所以可以多些几个比如： 192 256 384 512 的都写上【必须保证最小的icon至少是192px】
+
+[realfavicongenerator](http://realfavicongenerator.net/) 根据manifest 预览并自定义闪屏
 
 
 ### 问题总结
@@ -63,3 +70,10 @@ Mac 下面的做法是：** mv ngrok /usr/local/bin**下面 这里面也是存�
 一开始不知道的情况下，发现自己更改了 html css 等文件，必须强刷页面才能看到效果，或者是更改 sw.js 里面的 cache key 的值，但是这样很麻烦。
 
 原来在 Chrome浏览器的 **Application -> Service Works** 下面有三个选项: **online，Update on reload ， Bypass for network** ;只需要勾选 **Update on reload**  就可以不那么麻烦了
+
+#### PWA 页面性能的测试
+
+安装[Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?utm_source=chrome-ntp-icon) 来测试PWA的性能。
+
+打开页面点击该图标，然后点击【Generate report】就可以看到对该页面的评估。【不能打开 devtools】
+
