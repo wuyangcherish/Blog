@@ -11,6 +11,7 @@
 * 05 webserve 的总结
 * 06 proxy 的总结
 * 07 cache 的总结
+* URL 总结
 
 ### JavaScript
 
@@ -29,8 +30,17 @@
 
 * 《CSS SECRETS》总结
 
+
 ### Chrome extension
 
 * 学习Chrome扩展的做一些东西
 * Chrome 插件待续。。。
 
+
+### SVG 
+
+* 绘制一个雪山的图片
+
+### Translated 
+
+* 试着翻译些文章
