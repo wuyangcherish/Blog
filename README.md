@@ -44,3 +44,7 @@
 ### Translated 
 
 * 试着翻译些文章
+
+### Python
+
+* python 基础知识摘抄
