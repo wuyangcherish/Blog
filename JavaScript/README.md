@@ -5,6 +5,7 @@
  -- Javascript 读书笔记
 	 |-- 深入理解 Jvascript
 	 |-- 学习之初的一些笔记
+	 |-- 面向对象笔记
  -- Javascript 源码笔记
 	 |-- underscore.js笔记
  -- Javascript 读书笔记
