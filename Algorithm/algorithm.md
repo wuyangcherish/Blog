@@ -55,7 +55,7 @@ F(1) 是走到第一层  有一种走法  F(2) 是第二层，有两种走法。
 那么就可以根据这个来判断是不是2的乘方，时间复杂度为 ``O(1)``
 
 
-延伸问题　》》　判断一个数字转换成２进制之后的１的个数
+**延伸问题**　判断一个数字转换成２进制之后的１的个数
 
 具体代码见[Here](https://gist.github.com/wuyangcherish/d7d92015b167327a1d76f785b587442f)
 
@@ -68,6 +68,10 @@ F(1) 是走到第一层  有一种走法  F(2) 是第二层，有两种走法。
 
 遍历所有的怪兽，如果自身能量值大于等于这个怪兽的，那么直接加到自己身上，否则，自身加上他们两个的最大公约数
 
-最大公约数的求解见[the best way to find common divisor ]()
+最大公约数的求解见[the best way to find common divisor ](https://stackoverflow.com/questions/4885537/what-is-the-fastest-way-to-find-the-gcd-of-n-numbers)
+
+具体代码见[Here](https://gist.github.com/wuyangcherish/23b04a0c5eb8d4cb3d7692668183d391)
+
+
 
 
