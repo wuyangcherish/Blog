@@ -4,6 +4,7 @@
 
 * Sketch 的一些相关应用
 * PS 的一些使用记录
+* switch copy -- 按照 sketch 教程所画
 
 
 ### HTTP
